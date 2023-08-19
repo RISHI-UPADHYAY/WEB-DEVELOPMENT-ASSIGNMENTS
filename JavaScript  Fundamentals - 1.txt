@@ -1,0 +1,98 @@
+JavaScript Fundamentals - 1
+
+QUESTION 1 :
+let TotalValue = 10000
+let DiscountedPercentage = 50
+let DecimalDiscountedPercentage = 0.5
+let Discount = TotalValue*DecimalDiscountedPercentage
+let FinalValue = TotalValue - Discount
+console.log("Total cost after" , DiscountedPercentage , "percent discount is " , FinalValue)
+
+
+QUESTION 2 :
+let username = "admin"
+let password =  "12345"
+if(username=="admin" && password=="12345"){
+    console.log("Login Successful")
+}
+else{
+    console.log("Invalid Credentials")
+}
+
+QUESTION 3 :
+let AmountInIndianRupees = 850
+let AmountInUSDollars = AmountInIndianRupees*0.01219512195     // 1 rupee = 0.01219512195 USD
+console.log(AmountInIndianRupees , "INR is" , AmountInUSDollars , "USD")
+
+QUESTION 4 :
+let NumberofChilds = 2
+let NumberofSeniors = 1
+let NumberofAdults = 1
+let TotalPrice = NumberofChilds*100 + NumberofAdults*150 + NumberofSeniors*120
+console.log("The total ticket price is " , TotalPrice)
+
+QUESTION 5 :
+let typeOfPackage = "standard";
+
+switch (typeOfPackage) {
+  case "standard":
+    console.log("Your package will be delivered in next 3-5 Days");
+    break;
+  case "express":
+    console.log("Your package will be delivered in next 1-2 Days");
+    break;
+  case "overnight":
+    console.log("Your package will be delivered by tomorrow");
+    break;
+  default:
+    console.log("Invalid package type");
+}
+
+
+QUESTIOn 6 :
+let name = "Mithun";
+let email = "mithun@gmail.com";
+let age = 21;
+if(typeof name!=="string"){
+    console.log("Name should be a string...");
+}
+else if(typeof email!=="string"){
+    console.log("Email should be a string...");
+}
+else if(typeof age!=="number"){
+    console.log("Age should be a number...");
+}
+else{
+    console.log("All fields are valid");
+}
+
+
+QUESTION 7 :
+const item_name = ["Pasta" , "Rice" , "Bread" , "Cheese" , "Frozen Foods"]
+for(let index = 0 ; index<item_name.length;index++){
+    console.log(item_name[index])
+}
+
+QUESTION 8 :
+let num = 10;
+while(num>=0){
+    console.log(num)
+    num--
+}
+
+QUESTION 9 :
+const array = [1 , 2 , 999 , 56 , "Mithun" , 1234 , "PW"];
+for(let index = 0;index<array.length;index++){
+    if(typeof array[index]==="string"){
+        console.log("Found the first string : " , array[index]);
+        break;
+    }
+}
+
+QUESTION 10 :
+let num = [1 , 2 , -3 , 5 , -9 , -8 , -7 , 7];
+for(let index=0 ; index<num.length ; index++){
+    if(num[index]>0){
+        console.log(num[index]);
+    }
+}
